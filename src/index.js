@@ -110,10 +110,10 @@ function renderToString(vnode, context, opts, inner, isSvgMode) {
 			}
 			
 			if (name==='htmlFor') {
-				if (attributes['for']) continue;
+				if (attributes.for) continue;
 				name = 'for';
 			}
-			
+
 			else if (isSvgMode && name.match(/^xlink:?./)) {
 				name = name.toLowerCase().replace(/^xlink:?/, 'xlink:');
 			}
